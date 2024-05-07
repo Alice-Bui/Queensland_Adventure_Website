@@ -1,4 +1,4 @@
-# 2702ICT_Assignment1
+# Queensland Adventures Website
 
 ## Description:
 
