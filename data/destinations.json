@@ -1,0 +1,11 @@
+{
+    "destinations" : [
+        {"address": "Brisbane", "link": "./photos/brisbane.jpg"},
+        {"address": "Mackay", "link": "./photos/mackay.jpg"},
+        {"address": "Cairns", "link": "./photos/cairns.jpg"},
+        {"address": "Gold Coast", "link": "./photos/goldcoast.jpg"},
+        {"address": "Townsville", "link": "./photos/townsville.jpg"},
+        {"address": "Sunshine Coast", "link": "./photos/sunshinecoast.jpg"},
+        {"address": "Port Douglas", "link": "./photos/portdouglas.jpg"}
+    ]
+}

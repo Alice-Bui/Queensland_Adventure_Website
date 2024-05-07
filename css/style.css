@@ -1,0 +1,474 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #FFFFF0;
+}
+
+/* /////////////////////////////////Header, Footer & Main Structure/////////////////////////////////// */
+header {
+    background-color: #3D3635;
+    font-size: 90%;
+    height: 10vh;
+    padding: 0 4vw;
+    color: #FFFFF0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    font-size: 150%;
+    padding-right: 1vw;
+}
+
+footer {
+    background-color: #3D3635;
+    height: 3vh;
+    font-size: 1vw;
+    align-content: center;
+    color: #FFFFF0;
+    padding: 0.5vw;
+}
+
+main {
+    display: flex;
+    padding: 0 4vw;
+    flex-direction: column;
+}
+
+/*/////////////////////////////// Intro ////////////////////////////*/
+#intro {
+    background-image: linear-gradient(#62626280, #62626280), url("../photos/introbg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 94vh;
+    padding: 0 4vw;
+    color: #FFFFF0;
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center;
+    text-align: center;
+}
+
+#intro h1{
+    font-size: 7vw;
+    padding-bottom: 5vh;
+}
+
+#intro p{
+    font-size: 3vw;
+}
+
+#move-button{
+    position: absolute;
+    align-self: center;
+    margin-top: 70vh;
+    background-color: #3D3635;
+    border-radius: 100px;
+    padding: 0.25vw 2.75vw;
+    font-size: 5vw;
+    color: #FFFFF0;
+    cursor: pointer;
+}
+
+/* //////////////////////////////////////Navigation Bar ////////////////////////////*/
+.navBar li {
+    list-style-type:none;
+    padding-bottom: 3vh;
+    cursor: pointer;
+}
+
+.navBar li a:hover{
+    background-color: #766968;
+    color: #FFFFF0;
+}
+
+.navBar li a{
+    text-decoration: none;
+    padding: 0.5vw 1.25vw;
+    border-radius: 10px;
+    font-size: 1.25vw;
+    color: #3D3635;
+}
+
+.onscreenPage {
+    background-color: #F2DBAE;
+    font-weight: bold;
+}
+
+/*/////////////////mainNav//////////////*/
+#mainNav {
+    display: none;
+    flex: 1.5;
+    width: 100%;
+    padding: 7vh 0;
+}
+#mainNav nav {
+    position: sticky;
+    top: 13vh;
+}
+
+/*//////////////////headNav///////////////*/
+#headNav {
+    display: none;
+}
+
+#headNav li {
+    display: inline;
+}
+
+#headNav li a{
+    font-size: 1vw;
+    color: #FFFFF0;
+    padding: 0.25vw 1vw;
+}
+
+#headNav .onscreenPage {
+    color: #3D3635;
+}
+
+#headNav .onscreenPage:hover{
+    color: #FFFFF0;
+}
+
+/*/////////////////Side nav//////////////*/
+#sideNav{
+    position: absolute;
+    background: #3D3635;
+    height: 100vh;
+    text-align: left;
+    top: 0;
+    right: 0;
+    z-index:2;
+    display: none;
+}
+
+#sideNav ul {
+    padding: 6vw;
+}
+
+#sideNav li {
+    display: block;
+}
+
+#sideNav li a{
+    font-size: 3vw;
+    color: #FFFFF0;
+    padding: 1vh 0.5vw;
+}
+
+#sideNav .onscreenPage {
+    color: #3D3635;
+}
+
+#sideNav .onscreenPage:hover{
+    color: #FFFFF0;
+}
+
+#nav-close, #nav-open {
+    display: block;
+    color: #FFFFF0;
+    font-size: 7vw;
+    cursor: pointer;
+}
+
+#nav-close {
+    padding: 1vh 2vw;
+}
+
+/* /////////////////////////////////////////Page Content ////////////////////////////////////*/
+#page-content {
+    flex: 6;
+    padding: 7vh 1vw;
+}
+
+#page-content h1 {
+    color: #3D3635;
+    text-decoration-line: underline;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#back-button {
+    text-align: left;
+    padding: 0.5vw 1.25vw;
+    font-size: 2.75vw;
+    cursor: pointer
+}
+
+/* /////////////////////////List of Destinations /////////////////////////*/
+#list-thumbnails, #destination-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#list-thumbnails figure {
+    margin: 1vw;
+    padding: 0.5vw;
+}
+
+#list-thumbnails figure img {
+    width: 25vw;
+    height: 25vw;
+    opacity: 0.75;
+    border-radius: 15px;
+}
+
+#list-thumbnails figure:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+#list-thumbnails figure img:hover {
+    opacity: 1;
+}
+
+#list-thumbnails figure figcaption {
+    font-size: 3vw;
+    color:#3D3635
+}
+
+/* /////////////////////////////// Selected Destination //////////////////////////// */
+
+/* //////////////// Weather Data /////////////////*/
+#destination-weather {
+    text-align: center;
+    font-size: 2.75vw;
+    margin-top: 2vh;
+}
+
+#destination-weather div {
+    margin: 1vh 0;
+}
+
+#destination-weather p {
+    font-style: italic;
+    font-size: 2.25vw;
+}
+
+#destination-weather h2 {
+    font-size: 3.75vw;
+}
+
+/*//////////////Thumbnails for each Destination//////////////////*/
+#destination {
+    display: none;
+}
+#destination-thumbnails figure {
+    margin: 1vw;
+    padding: 0.5vw;
+    width: 25vw;
+    border-radius: 5px;
+}
+
+#destination-thumbnails img {
+    max-width: 100%;
+    max-height: 16vw;
+    width: auto;
+    height: auto;
+    border-radius: 5px
+}
+
+#destination-thumbnails figure figcaption {
+    font-size: 2vw;
+    color:#3D3635
+}
+
+
+/*////////////////////////// Modal ///////////////////////////////*/
+#modal-container {/*The Modal container*/
+    display: none; 
+    position: fixed; /*Stay in place*/
+    z-index: 1;
+    padding-top: 100px; /*Push the content down a bit*/
+    left:0;     top:0;  /*top left corner at 0, 0*/
+    width: 100%;    height: 100%;   /*Occupies the whole window*/
+    overflow: auto; /*Enable scroll if needed*/
+    background-color: rgba(0,0,0,0.9); /*Black with opacity*/
+}
+
+#modal-close {
+    position: absolute; /* position within the container */
+    top: 15px;  /*as specified by top and right*/
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#modal-content {
+    display: block;
+    margin: auto; /* centers this element */
+    max-width: 70%;
+    max-height: 70%; 
+    width: auto; 
+    height: auto; 
+}
+
+#modal-caption {
+    text-align: center; 
+    color: #FFFFF0;
+    padding-top: 10px;
+}
+
+
+/* ////////////////////////Recent View ///////////////////////////*/
+#recentView {
+    flex: 1.5;
+    height: 100%;
+    margin: 3vh 0;
+}
+
+#recentView-content {
+    padding: 0.5vw 1.25vw;
+    background-color: #F2DBAE;
+    margin-left: 2vw;
+    border-radius: 10px;
+}
+
+#recentView-title {
+    display: flex;
+    padding: 0.5vh 2vw;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 3vw;
+    color: #3D3635;
+    font-weight: bold;
+}
+
+#recentView-open, #recentView-close {
+    cursor: pointer;
+    color: #766968;
+}
+
+#recentView-close {
+    display: none;
+}
+
+#recentView-thumbnails {
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 1vh;
+}
+
+#recentView-thumbnails figure {
+    padding: 0.5vw;
+    width: 18%;
+}
+
+#recentView-thumbnails img {
+    padding: 0 15%;
+    width: 70%;
+    height: auto;
+    border-radius: 3px
+}
+
+#recentView-thumbnails figure figcaption {
+    font-size: 1.5vw;
+    max-width: 150%;
+    color:#3D3635;
+    text-align: center;
+}
+
+
+/*////////////////////////////////// Responsive Viewport ////////////////////////////////*/
+@media screen and (min-width: 768px) { 
+    main {
+        flex-direction: row;
+    }
+    
+    header {
+        height: 6vh;
+    }
+
+    #move-button {
+        font-size: 2.5vw;
+        padding: 0.25vw 1.5vw;
+    }
+
+    #nav-close, #nav-open {
+        display: none;
+    }
+
+    #intro h1{
+        font-size: 4vw
+    }
+
+    #intro p, #destination-weather h2{
+        font-size: 2vw;
+    }
+
+    #page-content h1 {
+        font-size: 2.75vw
+    }
+
+    #list-thumbnails figure img,  #destination-thumbnails figure{
+        width: 16vw;
+    }
+
+    #list-thumbnails figure img {
+        height: 16vw;
+    }
+
+    #list-thumbnails figure figcaption, #back-button {
+        font-size: 1.5vw;
+    }
+
+    #destination-weather {
+        font-size: 1.75vw
+    }
+
+    #destination-weather p,  #destination-thumbnails figure figcaption, #recentView-thumbnails figure figcaption {
+        font-size: 1vw;
+    }
+
+    #recentView {
+        margin: 7vh 0;
+        position: sticky;
+        top: 13vh;
+    }
+
+    #recentView-title {
+        font-size: 1.25vw;
+        padding: 0;
+    }
+
+    #recentView-thumbnails {
+        justify-content: center;
+    }
+
+    #recentView-thumbnails figure {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        justify-content: center;
+    }
+
+    #mainNav {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #headNav {
+        display: block
+    }
+}
+
+
+

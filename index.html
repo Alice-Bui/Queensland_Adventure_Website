@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Queensland Adventures</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Download & include jQuery library from jQuery CDN server -->
+    <!-- Need to have jQuery loaded before main.js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <p><span id="logo">&#x1F3D6;</span>Queensland Adventures</p>
+        <!--Navigation Bar in Header Section (screen width >=768px)-->
+        <div class="navBar" id="headNav">
+            <nav>
+                <ul></ul>
+            </nav>
+        </div>
+
+        <!--Navigation Bar on the Left Side - Hidden (screen width <768px)-->
+        <div class="navBar" id="sideNav">
+            <span id="nav-close">&times;</span>
+            <nav>
+                <ul></ul>
+            </nav>
+        </div>
+        <span id="nav-open">&equiv;</span>
+    </header>
+
+    <div id="intro">
+        <h1>Explore Queensland's<br>Wonders with Us</h1>
+        <p>Our website showcases the allure of Queensland tourism
+            through stunning imagery of its renowned destinations,
+            designed to inspire and entice visitors</p>
+        <span id="move-button">&#x21E3;</span>
+    </div>
+
+    <main>
+        <!--Navigation Bar in Main Section (screen width >=1024px)-->
+        <div class="navBar" id="mainNav">
+            <nav>
+                <ul></ul>
+            </nav>
+        </div>
+
+        <!--Page Content-->
+        <div id="page-content">
+            <!--List of Destinations-->
+            <div id="list">
+                <h1>Destinations</h1>
+                <div id="list-thumbnails">All Destinations' Thumbnails</div>
+            </div>
+
+            <!--Selected Destination-->
+            <div id="destination">
+                <span id="back-button">&larr; Back</span>
+                <h1>Destination Name</h1>
+                <div id="destination-weather">Destination Weather information goes here</div>
+                <div id="destination-thumbnails">Destination Thumbnails go here</div>
+            </div>
+
+            <!--Modal-->
+            <div id="modal-container">
+                <span id="modal-close">&times;</span>
+                <img id="modal-content">
+                <div id="modal-caption">Caption goes here</div>
+            </div>
+        </div>
+
+        <!--Recent View List-->
+        <div id="recentView">
+            <div id="recentView-content">
+                <div id="recentView-title">
+                    Recent View
+                    <!--Recent View Display Button-->
+                    <span id="recentView-open">&#x2B9F;</span>
+                    <span id="recentView-close">&#x2B9D;</span>
+                </div>
+                <!--Recent View Thumbnails-->
+                <div id="recentView-thumbnails"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; By Thien Thao My Bui - 2024</p>
+    </footer>
+</body>
+
+</html>
