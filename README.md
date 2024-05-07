@@ -4,6 +4,8 @@
 
 This project is an interactive website designed to promote tourism in Queensland, Australia. It displays photos from famous Queensland tourism destinations, such as the Great Barrier Reef, Fraser Island, Whitsunday Islands, and Gold Coast, utilizing APIs from multiple sources.
 
+The GitHub page version can be found here: https://alice-bui.github.io/Queensland_Adventures_Website/ 
+
 
 ## Development Process:
 
