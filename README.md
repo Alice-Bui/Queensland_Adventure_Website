@@ -4,8 +4,6 @@
 
 This project is an interactive website designed to promote tourism in Queensland, Australia, being created as part of Assignment 1 for course 2701ICT Intelligent Media Systems. It displays photos and information from famous Queensland tourism destinations, such as the Brisbane, Whitsunday Islands, and Gold Coast, utilizing APIs from multiple sources.
 
-The GitHub page version can be found here: https://alice-bui.github.io/Queensland_Adventures_Website/ 
-
 
 ## Development Process:
 
