@@ -108,8 +108,10 @@ function getWeather(address) {
         weather.lastupdated = lastupdatedTime.toUTCString();
         showWeather(weather);
         //too many asynchronusasynchronous requests can lead to performance issues, especially if they are being made simultaneously
-        //put the getGeoLocation here so that we can execute API fetch request in order
-        getGeoLocation(address); 
+        //put the searchPhoto here so that we can execute API fetch request in order
+        let lat = data.location.lat
+        let lon = data.location.lon;
+        searchPhoto(address, lat, lon);
     })
 }
 
@@ -132,25 +134,12 @@ function showWeather(weather) {
 
 ///////////////////////Display thumbnails for each destination/////////////////////////////////
 
-//Identify Lattitude & Longtitude from Google Map API
-function getGeoLocation(address) {
-    let API_KEY = "key=AIzaSyC0yYrXrJTVUNhPI91mfGtYwrx-O8yqBSs";
-    let getGeoLocationStr = "https://maps.googleapis.com/maps/api/geocode/json?"
-    + API_KEY + "&address=" + address;
-    
-    $.get(getGeoLocationStr, function(data) {
-        let lat = data.results[0].geometry.location.lat;
-        let lng = data.results[0].geometry.location.lng;
-        searchPhoto(address, lat, lng);
-    })
-}
-
 //Search for photo data with the context & location same with the address
-function searchPhoto(address, lat, lng) {
+function searchPhoto(address, lat, lon) {
     photos = [];
     let API_KEY = "api_key=a279357e0a7056780a558a70660bd488";
     let searchStr = "https://www.flickr.com/services/rest/?method=flickr.photos.search&sort=relevance&per_page=200&extras=views%2C+date_taken&format=json&nojsoncallback=1"
-    + "&" + API_KEY + "&text=" + address + "&lat=" + lat + "&lon=" + lng;
+    + "&" + API_KEY + "&text=" + address + "&lat=" + lat + "&lon=" + lon;
     $.get(searchStr, function(data){
         fetchPhoto(data, 6)
     });
